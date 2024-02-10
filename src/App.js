@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Hero from "./components/Hero/Hero";
+import Navbar from "./components/Navbar/Navbar";
+import Page2 from "./components/page2/Page2";
+import Page3 from "./components/page3/Page3";
+import Page4 from "./components/page4/Page4";
+import Page5 from "./components/page5/Page5";
+import Page6 from "./components/page6/Page6";
+import Page7 from "./components/page7/Page7";
+import LocomotiveScroll from "locomotive-scroll";
 
 function App() {
+  const locomotiveScroll = new LocomotiveScroll();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Hero />
+      <Page2 />
+      <Page3 />
+      <Page4 />
+      <Page5 />
+      <Page6 />
+      <Page7 />
     </div>
   );
 }

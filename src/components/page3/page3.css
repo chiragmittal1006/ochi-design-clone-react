@@ -1,0 +1,203 @@
+@font-face {
+  src: url(../Assets/FoundersGrotesk-Semibold.woff2);
+  font-family: gsb;
+}
+@font-face {
+  src: url(../Assets/icomoon.woff);
+  font-family: icom;
+}
+@font-face {
+  src: url(../Assets/NeueMontreal-Regular.woff2);
+  font-family: regular;
+}
+
+.page3 {
+  min-height: 100vh;
+  width: 100vw;
+  background: #cdea67;
+  border-radius: 1vw 1vw 0vw 0vw;
+  position: relative;
+  z-index: 11;
+  /* margin-top: -40px; */
+}
+
+.page3-content1 {
+  font-size: 4vw;
+  font-family: regular;
+  width: 100%;
+  padding-right: 10%;
+  color: #212121;
+  line-height: 4vw;
+  border-bottom: 1px solid #999;
+  padding: 5vw 3vw 6vw;
+}
+
+.page3-content1 span {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.page3-content1 span::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  color: #212121;
+  background-color: #212121;
+  transform-origin: right;
+}
+
+.page3-content1 span:hover::after {
+  animation: animated 1s linear;
+}
+@keyframes animated {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.page3-content2 {
+  width: 100%;
+  padding: 2vw 3vw 6vw;
+  font-family: regular;
+  font-weight: 100;
+  color: #212121;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #999;
+}
+
+.page3-content2-left {
+  width: 50%;
+}
+
+.page3-content2-right {
+  width: 50%;
+}
+
+.page3-content2-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-right: 5vw;
+}
+
+.page3-content2-right-1 {
+  width: 40%;
+}
+
+.page3-content2-right-1 p {
+  font-family: regular;
+}
+
+.page3-content2-right-1 p:nth-child(2) {
+  margin-top: 5vw;
+}
+
+.page3-content2-right-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page3-content2-right-2 span {
+  margin-top: 0.5vw;
+  position: relative;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+
+.page3-content2-right-2 span::after {
+  content: "";
+  position: absolute;
+  height: 0.1vw;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  color: #212121;
+  background-color: #212121;
+  transform-origin: right;
+}
+
+.page3-content2-right-2 span:hover::after {
+  animation: animated 1s linear;
+}
+
+@media screen and (max-width: 800px) {
+  .page3-content2 {
+    flex-direction: column;
+    gap: 5vh;
+    padding: 3vw 3vw 8vw;
+  }
+
+  .page3-content2-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5vh;
+  }
+  .page3-content2-right-1 {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .page3-content1 {
+    font-size: 8vw;
+    line-height: 8vw;
+    padding: 8vw 3vw 8vw;
+  }
+}
+
+.page3-content3{
+    width: 100%;
+    padding: 1vw 3vw 3vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.page3-content3-left{
+    width: 50%;
+}
+
+.page3-content3-left button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #212121;
+    color: #fff;
+    padding: 1.5vw 3vw;
+    border-radius: 4vw;
+    border: none;
+    font-size: 1vw;
+    margin-top: 2vw;
+    font-family: regular;
+}
+
+.page3-content3-left h1{
+    font-family: regular;
+    font-size: 4vw;
+}
+
+.page3-content3-right{
+    width: 50%;
+    height: 30vw;
+    background-image: url(../Assets/img2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    transition: all ease-in-out 0.4s;
+}

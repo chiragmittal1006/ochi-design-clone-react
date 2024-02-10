@@ -1,0 +1,88 @@
+@font-face{
+    src: url(../Assets/FoundersGrotesk-Semibold.woff2);
+    font-family: gsb;
+}
+@font-face{
+    src: url(../Assets/icomoon.woff);
+    font-family: icom;
+}
+@font-face{
+    src: url(../Assets/NeueMontreal-Regular.woff2);
+    font-family: regular;
+}
+
+.page7{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 6vw 3vw;
+    background: #18171B;
+    color: #f1f1f1;
+}
+
+.page7-left,.page7-right{
+    height: 100%;
+    width: 49.5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.page7-left h1, .page7-right h1{
+    font-size: 9.8vw;
+    line-height: 8vw;
+    font-family: gsb;
+}
+
+.page7-right-1{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.page7-right-1 span{
+    font-family: regular;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    position: relative;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.page7-right-1 span::before{
+    content: "";
+    position: absolute;
+    height: 0.1rem;
+    background: black;
+    color: black;
+    width: 100%;
+    transform-origin: left;
+    transform: scale(0);
+    bottom: 0%;
+    left: 0px;
+    transition: all ease-in-out 0.3s;
+}
+
+.page7-right-1 span:hover::before{
+    transform: scale(1);
+}
+
+.page7-right-co{
+    padding-right: 10vw;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:600px) {
+    #page7-bottom2{
+        display: none;
+    }
+    .page7{
+        padding: 20vw 3vw;
+    }
+}

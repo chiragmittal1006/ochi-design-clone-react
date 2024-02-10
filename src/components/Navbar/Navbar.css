@@ -1,0 +1,78 @@
+@font-face{
+    src: url(../Assets/FoundersGrotesk-Semibold.woff2);
+    font-family: gsb;
+}
+@font-face{
+    src: url(../Assets/icomoon.woff);
+    font-family: icom;
+}
+@font-face{
+    src: url(../Assets/NeueMontreal-Regular.woff2);
+    font-family: regular;
+}
+
+.navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 1.2vw 3vw 1.2vw 3vw;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: regular;
+    font-size: 1.2vw;
+    z-index: 111;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-right {
+    overflow: hidden;
+}
+.navbar-right a {
+    margin-left: 1.3vw;
+    position: relative;
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    height: fit-content;
+    font-weight: 100;
+    font-family: regular;
+    font-size: 1.02vw;
+}
+
+.navbar-right a::after {
+    content: attr(data-content);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    left: 0%;
+    transition: all ease-in-out 0.3s;
+}
+
+.navbar-right a:nth-child(5){
+    margin-left: 20vw;
+}
+
+.navbar-right a::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: black;
+    color: black;
+    width: 100%;
+    transform-origin: left;
+    transform: scale(0);
+    bottom: 0%;
+    left: 0px;
+    transition: all ease-in-out 0.3s;
+}
+
+.navbar-right a:hover::before{
+    transform: scale(1);
+}

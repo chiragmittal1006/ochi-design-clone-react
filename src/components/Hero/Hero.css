@@ -1,0 +1,115 @@
+@font-face{
+    src: url(../Assets/FoundersGrotesk-Semibold.woff2);
+    font-family: gsb;
+}
+@font-face{
+    src: url(../Assets/icomoon.woff);
+    font-family: icom;
+}
+@font-face{
+    src: url(../Assets/NeueMontreal-Regular.woff2);
+    font-family: regular;
+}
+
+.hero-page1{
+    max-height: 100vh;
+    width: 100vw;
+    padding: 1px 3vw 5vw;
+}
+
+.hero-page1-content{
+    margin-top: 10vw;
+    padding-bottom: 16vw;
+    border-bottom: 2px solid #dadada;
+}
+
+.hero-page1-content h1{
+    font-family: gsb;
+    color: #212121;
+    font-size: 9vw;
+    line-height: 6.7vw;
+}
+
+.hero-page1-content-1{
+    width: fit-content;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero-page1-content-1-img{
+    width: 8.5vw;
+    height: 5.7vw;
+    overflow: hidden;
+    border-radius: 0.5vw;
+    background-image: url(../Assets/img1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-page1-foot{
+    padding-top: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: regular;
+    font-weight: 400;
+    color: #212121;
+}
+
+.hero-page1-foot button{
+    height: 30px;
+    padding: 0vw 15px;
+    border-radius: 35px;
+    border: 1.5px solid #222;
+    transition: all ease-in-out 0.2s;
+}
+.hero-page1-foot button:hover{
+    color: #F1F1F1;
+    background: #212121;
+}
+
+.hero-page1-foot-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.hero-page1-foot-1-icon{
+    height: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1.5px solid #222;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-page1-foot-1-icon:hover{
+    color: #F1F1F1;
+    background: #212121;
+}
+
+@media screen and (max-width : 850px) {
+    .hero-page1-foot{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .hero-page1-content{
+        padding-bottom: 30vw;
+    }
+    .hero-page1{
+        padding:10vw 3vw 30vw;
+    }
+}
+
+@media screen and (max-width : 500px){
+    .hero-page1-content{
+        margin-top: 20vw;
+        padding-bottom: 100vw;
+    }
+}

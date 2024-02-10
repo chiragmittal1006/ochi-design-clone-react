@@ -1,0 +1,72 @@
+@font-face{
+    src: url(../Assets/FoundersGrotesk-Semibold.woff2);
+    font-family: gsb;
+}
+@font-face{
+    src: url(../Assets/icomoon.woff);
+    font-family: icom;
+}
+@font-face{
+    src: url(../Assets/NeueMontreal-Regular.woff2);
+    font-family: regular;
+}
+
+.page4{
+    max-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.page4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.page4-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.page4-eye{
+    height: 15vw;
+    width: 15vw;
+    background: rgb(233, 233, 233);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page4-eye-1{
+    height: 70%;
+    width: 70%;
+    background: #222;
+    border-radius: 50%;
+    position: relative;
+}
+
+.page4-eye-line{
+    width: 100%;
+    height: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transform-origin: center;
+}
+
+.page4-eye-2{
+    height: 100%;
+    aspect-ratio: 1;
+    background: rgb(233, 233, 233);
+    border-radius: 50%;
+}
