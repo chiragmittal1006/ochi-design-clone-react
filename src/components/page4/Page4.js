@@ -19,7 +19,7 @@ function Page4() {
     })
 
   return (
-    <div className='page4' data-scroll data-scroll-speed="-0.5">
+    <div className='page4'>
         <img src={image1} alt="" />
         <div className="page4-box">
             <div className="page4-eye">
