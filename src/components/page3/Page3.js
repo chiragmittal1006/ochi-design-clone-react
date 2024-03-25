@@ -1,29 +1,9 @@
-import React, {useState, useEffect } from "react";
+import React from "react";
 import { GoDotFill } from "react-icons/go";
 // import image1 from "../Assets/img2.jpeg"
 import "./page3.css";
 
 function Page3() {
-  const [scrollSpeed, setScrollSpeed] = useState(0.4);
-  useEffect(() => {
-    function updateScrollSpeed() {
-      const screenWidth = window.innerWidth;
-      let newScrollSpeed = -0.3;
-      if (screenWidth >= 450 && screenWidth <=850) {
-        newScrollSpeed = 0.4;
-      } else if (screenWidth >= 0 && screenWidth <= 450) {
-        newScrollSpeed = 0.5;
-      }
-      setScrollSpeed(newScrollSpeed);
-    }
-    updateScrollSpeed();
-    window.addEventListener('resize', updateScrollSpeed);
-
-    return () => {
-      window.removeEventListener('resize', updateScrollSpeed);
-    };
-  }, []);
-
     const handleMouseEnter = () => {
         document.querySelector(".page3-content3-right").style.transform = "scale(0.95)";
       };
@@ -31,7 +11,7 @@ function Page3() {
         document.querySelector(".page3-content3-right").style.transform = "scale(1)";
       };
   return (
-    <div data-scroll data-scroll-section data-scroll-speed={scrollSpeed} className="page3">
+    <div className="page3">
       <div className="page3-content1">
         Ochi is a strategic partner for fast-growing tech businesses that need
         to <span>raise funds</span>, <span>sell products</span>,{" "}
